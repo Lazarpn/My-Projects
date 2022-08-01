@@ -1,9 +1,0 @@
-[build]
-
-base = "My-Projects"
-
-publish = "RISC",
-publish = "Color flipper",
-publish = "FAQ Page"
-
-command = "echo 'default context'"
