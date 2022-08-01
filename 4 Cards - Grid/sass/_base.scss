@@ -1,0 +1,25 @@
+@import "mixins";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include respond(dekstop) {
+    font-size: 80%;
+  }
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: rgb(240, 235, 235);
+}

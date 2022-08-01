@@ -1,0 +1,42 @@
+@import "mixins.scss";
+:root {
+  --color-red: rgb(255, 122, 122);
+  --color-green: rgb(56, 204, 140);
+
+  --color-blue: rgb(96, 85, 165);
+
+  --color-blue-dark: rgb(62, 60, 73);
+  --color-grey: rgb(185, 182, 211);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include respond-tablet {
+    font-size: 50%;
+  }
+
+  @include respond-desktop {
+    font-size: 85%;
+  }
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: Poppins;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #fff;
+}

@@ -1,0 +1,67 @@
+@import "mixins.scss";
+
+.intro {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10rem;
+  background-image: url(/images/bg-intro-desktop.png),
+    linear-gradient(to right bottom, rgb(255, 122, 122), rgb(255, 122, 122));
+
+  background-size: cover;
+  background-position: top;
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond-tablet {
+    grid-template-columns: 1fr;
+    background-image: url(/images/bg-intro-mobile.png),
+      linear-gradient(to right bottom, rgb(255, 122, 122), rgb(255, 122, 122));
+    grid-template-rows: min-content 1fr;
+    padding: 3rem;
+  }
+
+  @include respond-desktop {
+    padding: 15rem;
+  }
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > * {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px var(--color-blue-dark);
+  }
+
+  &__ad {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+
+    @include respond-tablet {
+      height: 15%;
+    }
+  }
+
+  &__form {
+    height: 85%;
+    background-color: #fff;
+    padding: 4rem 3rem;
+
+    @include respond-tablet {
+      height: 80%;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.footer {
+  background-color: var(--color-very-light-gray);
+  grid-row: 4 / 5;
+  @extend %grid-setup;
+  grid-template-rows: minmax(min-content, 12vh);
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: center-start / center-end;
+    border-bottom: 1px solid #555;
+  }
+
+  &__icons {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min-content, 20rem)
+    ); // maybe need fixing with mq
+    grid-gap: 4rem; // change with media query
+    justify-content: space-between; // possible change in media query for phone
+
+    @include respond(mobile-small) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}
+
+.footnav {
+  display: flex;
+  flex-direction: column;
+
+  @include respond(mobile-small) {
+    &:last-child {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__list {
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2;
+
+    @include respond(mobile-small) {
+      text-align: center;
+    }
+
+    &--modified {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-very-dark-violet);
+    &--modified {
+      color: rgb(165, 158, 158);
+    }
+  }
+}

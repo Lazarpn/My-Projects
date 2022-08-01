@@ -1,0 +1,190 @@
+// ### Primary
+
+// Desaturated Red: hsl(0, 36%, 70%)
+// rgb(206, 151, 151)
+// Soft Red: hsl(0, 93%, 68%)
+// rgb(249, 98, 98)
+
+// ### Neutral
+
+// Dark Grayish Red: hsl(0, 6%, 24%)
+// rgb(65, 58, 58)
+
+// ### Gradients
+
+// Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) // rgb(255, 255 , 255) rgb(255, 245, 245)
+
+// Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) // rgb(248, 191, 191) rgb(238, 140, 140)
+
+.beauty {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/Background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 70%;
+  width: 60%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(255, 255, 255),
+    rgb(255, 245, 245)
+  );
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: minmax(min-content, 80px) 1fr;
+
+  @include respond(tablet) {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content max-content 1fr;
+  }
+
+  &__logo {
+    height: 100%;
+    width: 100%;
+
+    @include respond(tablet) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    margin-right: 2rem;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include respond(tablet) {
+      margin: 0;
+      align-items: center;
+      height: 90%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    position: relative;
+    @include respond(tablet) {
+      align-self: stretch;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+
+    @include respond(tablet) {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      height: 85%;
+      display: block;
+    }
+  }
+}
+
+.form {
+  &__input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(248, 191, 191);
+    padding: 0.5rem;
+
+    border-radius: 2rem;
+
+    &::-webkit-input-placeholder {
+      color: rgb(248, 191, 191);
+      font-size: 1.2rem;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid rgb(248, 191, 191);
+    }
+
+    &:focus:invalid {
+      border: px solid rgb(224, 55, 55);
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    visibility: hidden;
+  }
+
+  &__input:focus:invalid + &__label {
+    visibility: visible;
+  }
+
+  &__input:focus:invalid + &__label {
+    visibility: visible;
+  }
+
+  &__label {
+    color: rgb(223, 84, 84);
+    visibility: hidden;
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: bottom;
+}
+
+.logo {
+  height: 2rem;
+  width: 10rem;
+  margin-left: 7rem;
+  margin-top: 3rem;
+
+  @include respond(tablet) {
+    height: 3.5rem;
+    width: 16.5rem;
+  }
+}
+
+.btn {
+  border-radius: 2rem;
+  height: 100%;
+  width: 20%;
+  margin-left: -6rem;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(248, 191, 191),
+    rgb(238, 140, 140)
+  );
+  color: #fff;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+  &__img {
+  }
+}
+
+.error {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

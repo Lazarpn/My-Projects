@@ -1,0 +1,34 @@
+@import "mixins.scss";
+:root {
+  // - Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+
+  --color-very-grayish-blue: hsl(240, 78%, 98%); // za button
+  --color-light-grayish-blue: hsl(234, 14%, 74%); // za switch
+  --color-blue: hsl(233, 13%, 49%);
+  --color-dark-blue: hsl(232, 13%, 33%); // za heading
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 85%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: Montserrat;
+  line-height: 1.4;
+  font-size: 1rem;
+  background-color: hsl(240, 33%, 94%);
+}

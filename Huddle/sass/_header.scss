@@ -1,0 +1,17 @@
+@import "mixins.scss";
+.header {
+  display: block;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    @include respond(tablet) {
+      margin-left: 4rem;
+    }
+  }
+}
+
+.logo {
+  height: 5rem;
+}

@@ -1,0 +1,73 @@
+.heading {
+  font-family: DM + Serif + Display;
+  &__1 {
+    font-size: 4rem;
+    color: var(--color-very-dark-violet);
+
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 10rem;
+      background-color: var(--color-very-dark-violet);
+      margin-bottom: 4rem;
+
+      @include respond(mobile-small) {
+        margin: 4rem auto;
+      }
+    }
+
+    &--modified {
+      color: var(--color-very-light-gray);
+
+      @include respond(mobile) {
+        text-align: center;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 10rem;
+        background-color: var(--color-very-light-gray);
+        margin-bottom: 4rem;
+
+        @include respond(mobile) {
+          margin: 0 auto 6rem auto;
+        }
+      }
+    }
+  }
+
+  &__2 {
+    color: var(--color-very-dark-violet);
+    font-size: 2rem;
+  }
+
+  &__find {
+    font-family: DM + Serif + Display;
+    font-size: 4rem;
+    // color: var(--color-very-light-grey);
+    color: rgb(224, 223, 223);
+  }
+}
+
+.text {
+  &__header {
+    color: rgb(207, 203, 203);
+    font-size: 1.4rem;
+
+    @include respond(mobile) {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  &__feature {
+    font-size: 1.2rem;
+    color: #555;
+
+    @include respond(mobile-small) {
+      text-align: center;
+    }
+  }
+}

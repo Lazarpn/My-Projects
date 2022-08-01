@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.btn {
+  all: unset;
+  text-transform: uppercase;
+  border: 1px solid black;
+  font-size: 40px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.counting-number {
+  font-size: 110px;
+  color: green;
+}

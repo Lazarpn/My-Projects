@@ -1,0 +1,70 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+span {
+  font-size: 20px;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  background-color: red;
+}
+
+.header__nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background-color: black;
+  color: #fff;
+  width: 40%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border-radius: 5px;
+}
+
+.color-name {
+  font-size: 35px;
+  margin-left: 10px;
+  color: aqua;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.btn--flipper {
+  margin-top: 20px;
+}

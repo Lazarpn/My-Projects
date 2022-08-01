@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lazar Stojanovic" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <h1>Modal Project</h1>
+        <div class="header__buttons">
+          <button class="btn btn--open-modal">Open Modal</button>
+          <button class="btn btn--open-modal">Open Modal</button>
+          <button class="btn btn--open-modal">Open Modal</button>
+        </div>
+      </div>
+    </header>
+    <div class="modal hidden">
+      <button class="modal__button btn--close-modal">x</button>
+      <h2>Hi, I'm a modal window!</h2>
+      <button class="btn btn--close-modal">Close modal</button>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

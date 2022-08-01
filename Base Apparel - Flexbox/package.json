@@ -1,0 +1,13 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel compile:sass devserver"
+  },
+  "author": "Lazar",
+  "license": "ISC"
+}

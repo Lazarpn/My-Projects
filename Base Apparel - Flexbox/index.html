@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="beauty">
+      <div class="content">
+        <div class="content__logo">
+          <img src="/images/logo.svg" alt="Logo" class="logo" />
+        </div>
+        <div class="content__text">
+          <div class="content__box">
+            <h1>
+              We're <br />
+              <span class="changed"
+                >Coming <br />
+                Soon</span
+              >
+            </h1>
+            <p class="text">
+              Hello fellow shoppers!We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our lanuch deals.
+            </p>
+
+            <div class="content__form">
+              <form class="form">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email Address"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form__label"
+                  >Please put a valid email !</label
+                >
+
+                <img src="/images/icon-error.svg" alt="Error" class="error" />
+              </form>
+
+              <button class="btn">
+                <img
+                  src="/images/icon-arrow.svg"
+                  alt="Arrow"
+                  class="btn__img"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__img">
+          <picture class="img">
+            <source
+              srcset="/images/hero-mobile.jpg"
+              media="(max-width: 62.5em)"
+            />
+            <img src="/images/desktop.jpg" alt="image" class="img" />
+          </picture>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

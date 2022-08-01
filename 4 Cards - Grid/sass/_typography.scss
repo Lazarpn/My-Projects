@@ -1,0 +1,25 @@
+.modified {
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgb(128, 125, 125);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 200;
+
+  &--modified {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+}
+
+.text {
+  font-size: 1.4rem;
+  color: rgb(128, 125, 125);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}

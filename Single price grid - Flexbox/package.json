@@ -1,0 +1,19 @@
+{
+  "name": "single",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel compile:sass dev-server"
+  },
+  "author": "Lazar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "npm-run-parallel": "^0.6.0"
+  }
+}

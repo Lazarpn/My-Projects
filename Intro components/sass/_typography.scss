@@ -1,0 +1,32 @@
+@import "mixins.scss";
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+
+  @include respond-tablet {
+    text-align: center;
+  }
+}
+
+.text {
+  font-size: 1.4rem;
+  font-weight: 200;
+
+  @include respond-tablet {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  &__modified {
+    font-size: 1.1rem;
+    color: var(--color-grey);
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  &__heading {
+    width: 80%;
+  }
+}

@@ -1,0 +1,65 @@
+@import "mixins.scss";
+.features {
+  grid-row: 3 / 4;
+  @extend %grid-setup;
+  grid-template-rows: minmax(min-content, 35%) minmax(20%, min-content); // fix this
+  align-content: space-evenly;
+
+  &__content {
+    grid-row: 1 / 2;
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include respond(mobile-small) {
+      align-items: center;
+    }
+  }
+
+  &__find {
+    grid-row: 2 / 3;
+    grid-column: center-start / center-end;
+    background-color: var(--color-dark-violet);
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tablet) {
+      margin: 4rem 0;
+    }
+
+    @include respond(mobile-small) {
+      height: 60%;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+  justify-content: space-between;
+  &__component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // modify in media queries
+    justify-content: space-between;
+
+    @include respond(mobile-small) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > * {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__img {
+    width: 8rem;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="pricing">
+    <header class="header">
+      <h1 class="heading heading__primary">Our Pricing</h1>
+      <div class="switch">
+        <form class="form">
+          <label for="checkbox" class="form__label">Anually</label>
+          <input type="checkbox" class="form__input" />
+          <span class="form__slider"></span>
+          <label for="checkbox" class="form__label">Monthly</label>
+        </form>
+      </div>
+    </header>
+
+    <div class="pricebox">
+      <div class="pricebox__card">
+        <h2 class="heading heading__secondary">Basic</h2>
+        <p class="price">
+          <span class="price__sign">&dollar;</span
+          ><span id="first">199.99</span>
+        </p>
+        <p class="text">500 GB Storage</p>
+        <p class="text">2 Users Allowed</p>
+        <p class="text">Send up to 3 GB</p>
+        <a href="#" class="btn">Learn more</a>
+      </div>
+      <div class="pricebox__card pricebox__card--modified">
+        <h2 class="heading heading__secondary heading__secondary--modified">
+          Professional
+        </h2>
+        <p class="price price__modified">
+          <span class="price__sign price__sign--modified">&dollar;</span
+          ><span id="second">249.99</span>
+        </p>
+        <p class="text text--modified">2 TB Storage</p>
+        <p class="text text--modified">10 Users Allowed</p>
+        <p class="text text--modified">Send up to 20 GB</p>
+        <a href="#" class="btn btn--modified">Learn more</a>
+      </div>
+      <div class="pricebox__card">
+        <h2 class="heading heading__secondary">Master</h2>
+        <p class="price">
+          <span class="price__sign">&dollar;</span
+          ><span id="third">399.99</span>
+        </p>
+        <p class="text">2 TB Storage</p>
+        <p class="text">10 Users Allowed</p>
+        <p class="text">Send up to 20 GB</p>
+        <a href="#" class="btn">Learn more</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

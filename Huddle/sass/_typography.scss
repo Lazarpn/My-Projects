@@ -1,0 +1,21 @@
+@import "mixins.scss";
+h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  color: var(--color-white);
+  font-size: 3rem;
+
+  @include respond(tablet) {
+    text-align: center;
+  }
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--color-white);
+
+  @include respond(tablet) {
+    text-align: center;
+  }
+}

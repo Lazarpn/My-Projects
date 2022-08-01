@@ -1,0 +1,62 @@
+@import 'mixins.scss';
+
+.header {
+  grid-row: 2 / 3;
+  @extend %grid-setup;
+  background-color: var(--color-dark-violet);
+  grid-template-rows: 10rem 1fr 12rem;
+  margin-bottom: 5rem;
+
+  @include respond(mobile) {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__content {
+    grid-column: center-start / col-end 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include respond(mobile) {
+      grid-row: 2 / 3;
+      grid-column: full-start / full-end;
+      justify-content: center;
+      align-items: center;
+
+      & > * {
+        margin-top: 8rem; // possible change in mq
+      }
+    }
+  }
+
+  &__image {
+    grid-column: col-end 5 / center-end;
+    grid-row: 2 / -1;
+
+    @include respond(mobile) {
+      grid-row: 1 / 2;
+      grid-column: full-start / full-end;
+    }
+  }
+  &__img {
+    width: 40rem;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+
+    @include respond(mobile) {
+      height: 100%;
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    @include respond(mobile-small) {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}
