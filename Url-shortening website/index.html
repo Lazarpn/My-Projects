@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <nav class="header__nav nav">
+        <img src="/images/logo.svg" alt="Logo" class="nav__logo" />
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Resources</a></li>
+        </ul>
+        <div class="nav__modal-box">
+          <a href="#" class="nav__link">Login</a>
+          <button href="#" class="btn btn__nav btn--round btn--sign-up">
+            Sign Up
+          </button>
+        </div>
+      </nav>
+      <div class="header__content">
+        <div class="header__content__text">
+          <h1 class="heading heading__1">More than just shorter links</h1>
+          <p>
+            Build your brand's recognition and get detailed inisights on how
+            your links are performing.
+          </p>
+          <button class="btn btn__header btn--round btn--sign-up">
+            Get Started
+          </button>
+        </div>
+
+        <img
+          src="/images/illustration-working.svg"
+          alt="Working Image"
+          class="header__content__img"
+        />
+      </div>
+    </header>
+    <main class="home">
+      <div class="home__box">
+        <form class="form__shorten">
+          <input
+            class="form__shorten__input"
+            type="link"
+            placeholder="Shorten a link here..."
+          />
+          <a class="btn btn--edge btn__form">Shorten it!</a>
+        </form>
+      </div>
+      <div class="home__links">
+        <!-- <div class="home__link">
+          <span class="link__full">https://nexter.netlify.app/</span>
+          <span class="link__shortened">https://nexter.netlify.app/</span>
+          <a href="#" class="btn btn__shorten btn--edge">Copy</a>
+        </div> -->
+      </div>
+
+      <div class="home__text">
+        <h3 class="heading heading__3">Advanced Statistics</h3>
+        <p>
+          Track how your links are performing accross the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+
+      <div class="home__cards">
+        <div class="card card--1">
+          <img
+            class="card__img"
+            src="/images/icon-brand-recognition.svg"
+            alt="Brand Recognition Icon"
+          />
+          <h4 class="heading heading__4">Brand Recognition</h4>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ab
+            error iusto quia necessitatibus explicabo eum sapiente voluptatum
+            soluta consectetur harum, eaque vitae dolores mollitia a. Optio et
+            aliquid nam!
+          </p>
+        </div>
+        <div class="card card--2">
+          <img
+            class="card__img"
+            src="/images/icon-detailed-records.svg"
+            alt="Detailed Records Icon"
+          />
+          <h4 class="heading heading__4">Detailed Records</h4>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ab
+            error iusto quia necessitatibus explicabo eum sapiente voluptatum
+            soluta consectetur harum, eaque vitae dolores mollitia a. Optio et
+            aliquid nam!
+          </p>
+        </div>
+        <div class="card card--3">
+          <img
+            class="card__img"
+            src="/images/icon-fully-customizable.svg"
+            alt="Fully customizable Icon"
+          />
+          <h4 class="heading heading__4">Fully customizable</h4>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ab
+            error iusto quia necessitatibus explicabo eum sapiente voluptatum
+            soluta consectetur harum, eaque vitae dolores mollitia a. Optio et
+            aliquid nam!
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="boost">
+      <h2 class="heading heading__2">Boost your links today</h2>
+      <button href="#" class="btn btn__boost btn--round btn--sign-up">
+        Get Started
+      </button>
+    </div>
+    <footer class="footer">
+      <img src="/images/logo.svg" alt="Logo" class="footer__logo" />
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link"></a></li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Link Shortening</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Branded Links</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Analytics</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link"></a></li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Developers</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Support</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Our Team</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Careers</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <img
+          src="/images/icon-facebook.svg"
+          alt="Facebook icon"
+          class="footer__icon"
+        />
+        <img
+          src="/images/icon-twitter.svg"
+          alt="Twitter icon"
+          class="footer__icon"
+        />
+        <img
+          src="/images/icon-pinterest.svg "
+          alt="Pinterest icon"
+          class="footer__icon"
+        />
+        <img
+          src="/images/icon-instagram.svg"
+          alt="Instagram icon"
+          class="footer__icon"
+        />
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <h3 class="heading heading__3">
+        You can have your links shortened in only one second
+      </h3>
+      <form class="modal__form"></form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

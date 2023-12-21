@@ -1,0 +1,126 @@
+.btn {
+  all: unset;
+  background-color: var(--color-primary-cyan);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+
+  &__nav {
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+  }
+
+  &__header {
+    // fix all units
+    width: 150px;
+    height: 50px;
+    margin-top: 45px;
+  }
+
+  &__boost {
+    width: 150px;
+    height: 50px;
+    margin-top: -100px;
+  }
+
+  &__form {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+  }
+  &__copy {
+    width: 100px;
+    height: 40px;
+  }
+
+  &--round {
+    border-radius: 30px;
+  }
+
+  &--edge {
+    border-radius: 5px;
+  }
+
+  &:hover {
+    background-color: var(--color-secondary-cyan);
+    transition: all 0.2s;
+  }
+}
+
+.boost {
+  grid-row: boost-start / boost-end;
+  grid-column: full-start / full-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-primary-dark-violet);
+}
+
+.form__shorten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  height: 150px;
+  background-color: var(--color-primary-dark-violet);
+  width: 100%;
+  border-radius: 10px;
+
+  &__input {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  &__input::placeholder {
+    font-size: 18px;
+  }
+}
+
+.card {
+  height: 300px;
+  padding: 0 30px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 10;
+  &__text {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  &__img {
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    background-color: var(--color-primary-dark-violet);
+    height: 80px;
+    padding: 15px;
+  }
+
+  &--1 {
+  }
+
+  &--2 {
+    align-self: center;
+  }
+
+  &--3 {
+    align-self: flex-end;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}

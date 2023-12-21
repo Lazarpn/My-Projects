@@ -1,0 +1,31 @@
+.header {
+  grid-column: center-start / center-end;
+  grid-row: header-start / header-end;
+  display: flex;
+  flex-direction: column;
+  &__nav {
+  }
+
+  &__content {
+    // fix all units
+
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      // fix all units
+
+      margin-right: 200px;
+      & p {
+        font-size: 25px;
+        margin-top: 10px;
+      }
+    }
+
+    &__img {
+      height: 90%;
+    }
+  }
+}

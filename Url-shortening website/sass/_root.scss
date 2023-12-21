@@ -1,0 +1,45 @@
+:root {
+  --color-primary-cyan: hsl(180, 66%, 49%);
+  --color-secondary-cyan: rgba(155, 226, 226, 255);
+  --color-primary-dark-violet: rgba(58, 48, 83, 255);
+  --color-secondary-red: hsl(0, 87%, 67%);
+  --color-neutral-gray: hsl(0, 0%, 75%);
+  --color-neutral-violet: hsl(257, 7%, 63%);
+  --color-neutral-dark-violet: hsl(260, 8%, 14%);
+  --color-neutral-dark-blue: rgba(35, 32, 39, 255);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.wrapper {
+  // fix all units
+
+  display: grid;
+  grid-template-rows:
+    [header-start] 95vh [header-end main-start] minmax(120vh, max-content)
+    [main-end boost-start] 30vh [boost-end footer-start] 50vh [footer-end];
+
+  grid-template-columns:
+    [full-start gap-1-start] 150px [gap-1-end center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 1fr) [col-end]
+    )
+    [center-end gap-1-start]150px [full-end gap-2-end];
+}
